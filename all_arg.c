@@ -8,15 +8,13 @@
  */
 int main(int ac, char **av)
 {
-	int i = 1;
-	int sum = 0;
+	int i = 0;
 
-	while (i < ac)
+	while (*av != NULL)
 	{
-		printf("av[%d}: %s\n", i, av[i]);
-		sum += atoi(av[i]);
+		printf("argv[%d] : %s\n", i, *av);
+		av++;
 		i++;
 	}
-	printf("Sum of the Arguments: %d\n", sum);
 	return (0);
 }
