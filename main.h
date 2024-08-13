@@ -5,8 +5,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <string.h>
 
 int arg(int ac, char **av);
 int prompt(void);
+char _strtok(const char *str, char delimeter);
 
 #endif
