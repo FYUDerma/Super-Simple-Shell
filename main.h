@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-int main(int ac, char **av);
+int arg(int ac, char **av);
+int prompt(void);
 
 #endif

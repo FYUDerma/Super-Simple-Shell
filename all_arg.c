@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * main - Print the sum of all arguments
+ * arg - Print the sum of all arguments
  * @ac: count of the variable
  * @av: vector of the variable
  * Return: Return the sum
  */
-int main(int ac, char **av)
+int arg(int ac, char **av)
 {
 	int i = 0;
 
