@@ -7,10 +7,11 @@
  */
 int main(void)
 {
-	char *argv[] = {"/bin/ls", "-l", "/usr/", NULL};
+	char *argv[] = {"ls", "-l", NULL};
+	char *envv[] = {"NULL"};
 
 	printf("Before execve\n");
-	if (execve(argv[0], argv, NULL) == -1)
+	if (execve("/usr/bin/ls", argv, envv) == -1)
 	{
 		perror("Error:");
 	}
